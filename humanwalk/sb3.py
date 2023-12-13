@@ -61,6 +61,7 @@ if __name__ == '__main__':
     if args.train:
         env = gym.make(args.gymenv, render_mode=None)
         train(env, args.sb3_algo)
+        return
 
     if args.test:
         if os.path.isfile(args.test):

@@ -46,7 +46,7 @@ def test(env, sb3_algo, path_to_model):
 
         while not done:
             action, _ = model.predict(obs)
-            obs, _, done, _, _ = env(action)
+            obs, _, done, _, _ = env.step(action)
 
 
 
